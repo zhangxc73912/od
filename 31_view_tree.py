@@ -20,6 +20,7 @@ def build_tree(data):
 	tmp = t
 	stack = [tmp]
 	for i in range(1, len(data)):
+		print(i)
 		if data[i] == '{' and data[i + 1] != ',':  # 存在左节点
 			i += 1
 			node = TreeNode(data[i])

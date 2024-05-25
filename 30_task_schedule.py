@@ -1,8 +1,9 @@
 """
 https://zhuanlan.zhihu.com/p/639909595
 
-核心定义动态规划
+1.核心定义动态规划
 dp[i] = max(dp[i-1],dp[i-1]-task[i-1][1]+task[i][0]+task[i][1])
+2.需要将运行时间长的任务放在最前面
 
 1
 1
@@ -38,5 +39,5 @@ if __name__ == '__main__':
 		tasks.append(machines)
 	for task in tasks:
 		dp = [0] * len(task)
-		task.sort(key=lambda x: -x[1]) # 很重要需要将运行时间长的放在最前面
+		task.sort(key=lambda x: -x[1])  # 很重要需要将运行时间长的放在最前面
 		get_use_time(task, dp)

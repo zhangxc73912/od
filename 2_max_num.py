@@ -27,3 +27,5 @@ if __name__ == '__main__':
     result = ''.join(nums).lstrip('0') or '0'
 
     print(result)
+
+    

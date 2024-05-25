@@ -11,7 +11,7 @@ import copy
 
 
 def allocate_cookie(cookie_count, people_count, ans, result):
-	# 表示苹果已经分完了剩下的人接受的的是0
+	# 表示月饼已经分完了剩下的人接受的的是0
 	if cookie_count <= 0:
 		for i in range(people_count - 1, -1, -1):
 			ans[i] = 0
